@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- See http://mybatis.github.io/mybatis-3/configuration.html#settings -->
+<!--
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true" />
+        <setting name="vfsImpl" value="sample.infra.mybatis.vfs.SpringBootExecutableJarVFS" />
+        <setting name="aggressiveLazyLoading" value="false" />
+        <setting name="defaultExecutorType" value="REUSE" />
+        <setting name="jdbcTypeForNull" value="NULL" />
+        <setting name="proxyFactory" value="JAVASSIST" />
+        <setting name="localCacheScope" value="STATEMENT" />
+		<setting name="cacheEnabled" value="true" />
+		<setting name="lazyLoadingEnabled" value="false" />
+		<setting name="multipleResultSetsEnabled" value="true" />
+		<setting name="useColumnLabel" value="true" />
+		<setting name="useGeneratedKeys" value="false" />
+		<setting name="defaultExecutorType" value="SIMPLE" />
+		<setting name="defaultStatementTimeout" value="25000" /> 
+
+    </settings>
+-->
+
+	<!-- 
+	<environments default="public">
+		<environment id="public">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver.encoding" value="utf8" />
+			</dataSource>
+		</environment>
+	</environments>
+	 -->
+	
+	<!-- 
+	<mappers>
+		<mapper resource="resources/dat/MemberMapper.xml" />
+		<mapper resource="resources/mst/MemberMapper.xml" />
+	</mappers>
+	 -->
+
+	<typeAliases>
+        <package name="com.example.web.model" />
+        <package name="com.example.web.repository" />
+        <package name="com.example.web.typehandler" />
+    </typeAliases>
+    
+	<!-- 
+	<typeHandlers>
+		<typeHandler handler="com.example.web.typehandler.YesNoBooleanTypeHandler" javaType="boolean" jdbcType="CHAR" />
+	</typeHandlers>
+	 -->
+
+</configuration>
